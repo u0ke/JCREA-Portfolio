@@ -8,7 +8,7 @@
     <meta name="description" content="Jenny — Product Designer.">
     <title>JCREA — Jenny, Product Designer</title>
 
-    <!-- Urbanist variable font: all weights from 100 to 900. -->
+    <!-- Urbanist is loaded from Google Fonts; Lufga is not available in Google's catalog. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
@@ -428,6 +428,76 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis
                             orci elementum egestas lobortis. Sed lobortis orci elementum egestas lobortis.
                         </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="journal-section" aria-labelledby="journal-title">
+            <div class="journal-invitation">
+                <h2>Have an Awsome Project<br>Idea? <span>Let’s Discuss</span></h2>
+                <form class="journal-contact-form" action="mailto:hello@jcrea.design" method="get"
+                    enctype="text/plain">
+                    <label class="journal-email">
+                        <span class="journal-email__icon" aria-hidden="true">✉</span>
+                        <span class="visually-hidden">Your email address</span>
+                        <input type="email" name="email" placeholder="Enter Email Address" required>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+                <ul class="journal-highlights" aria-label="Professional highlights">
+                    <li><span aria-hidden="true">✦</span> 4.9/5 Average Ratings</li>
+                    <li><span aria-hidden="true">♙</span> 25+ Winning Awards</li>
+                    <li><span aria-hidden="true">◆</span> Certified Product Designer</li>
+                </ul>
+            </div>
+
+            <div class="journal-marquee" aria-label="UX Design, App Design, Dashboard, Wireframe, User Research">
+                <div class="journal-marquee__track">
+                    <span>UX Design <b aria-hidden="true">✦</b> App Design <b aria-hidden="true">✦</b> Dashboard <b aria-hidden="true">✦</b> Wireframe <b aria-hidden="true">✦</b> User Research <b aria-hidden="true">✦</b></span>
+                    <span aria-hidden="true">UX Design <b>✦</b> App Design <b>✦</b> Dashboard <b>✦</b> Wireframe <b>✦</b> User Research <b>✦</b></span>
+                </div>
+            </div>
+
+            <div class="journal-posts">
+                <header class="journal-posts__heading">
+                    <h2 id="journal-title">From my<br>blog post</h2>
+                    <a href="#journal-post-list">See All</a>
+                </header>
+
+                <div class="journal-post-grid" id="journal-post-list">
+                    <article class="journal-post">
+                        <div class="journal-post__image">
+                            <img src="../assets/box1.jpg" alt="Purple music app interface design" loading="lazy">
+                            <a class="journal-post__arrow" href="#journal-post-list" aria-label="Read Design Unraveled">
+                                <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                            </a>
+                        </div>
+                        <span class="journal-post__tag">UI/ UX Design</span>
+                        <div class="journal-post__meta"><span>Jayesh Patil</span><i></i><time datetime="2023-11-10">10 Nov, 2023</time></div>
+                        <h3>Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
+                    </article>
+                    <article class="journal-post">
+                        <div class="journal-post__image">
+                            <img src="../assets/box2.jpg" alt="Sugee loan management dashboard design" loading="lazy">
+                            <a class="journal-post__arrow" href="#journal-post-list" aria-label="Read Sugee loan management system">
+                                <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                            </a>
+                        </div>
+                        <span class="journal-post__tag">App Design</span>
+                        <div class="journal-post__meta"><span>Jayesh Patil</span><i></i><time datetime="2023-10-09">09 Oct, 2023</time></div>
+                        <h3>Sugee: Loan Management System for Rural Sector.</h3>
+                    </article>
+                    <article class="journal-post">
+                        <div class="journal-post__image">
+                            <img src="../assets/box3.jpg" alt="Cinetrade mobile app design" loading="lazy">
+                            <a class="journal-post__arrow" href="#journal-post-list" aria-label="Read Cinetrade project">
+                                <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                            </a>
+                        </div>
+                        <span class="journal-post__tag">App Design</span>
+                        <div class="journal-post__meta"><span>Jayesh Patil</span><i></i><time datetime="2023-08-13">13 Aug, 2023</time></div>
+                        <h3>Cinetrade: Innovative way to invest in Digital Media</h3>
                     </article>
                 </div>
             </div>
