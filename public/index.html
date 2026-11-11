@@ -68,9 +68,9 @@
                         </svg>
                     </div>
 
-                    <h1 class="hero-title">
-                        <span>I'm <span class="accent-text">Jenny</span>,</span>
-                        <span>Product Designer</span>
+                    <h1 class="hero-title" aria-label="I'm Jenny, Product Designer">
+                        <span class="hero-title__line">I'm <span class="accent-text">Jenny</span>,</span>
+                        <span class="hero-title__line hero-title__line--highlight">Product <span class="accent-text">Designer</span></span>
                     </h1>
 
                     <svg class="left-spark" viewBox="0 0 74 92" aria-hidden="true">
@@ -112,7 +112,8 @@
                     <div class="portrait-orb" aria-hidden="true"></div>
 
                     <!-- Portrait asset path supplied for this project. -->
-                    <img class="hero-portrait" src="/assets/image.png" alt="Jenny, Product Designer"
+                    <img class="hero-portrait" src="../assets/ff8750b0ee38089da872910b623b1d3a4aaf4535.png"
+                        alt="Jenny, Product Designer"
                         fetchpriority="high">
 
                     <div class="hero-actions" aria-label="Portfolio actions">
@@ -241,8 +242,80 @@
             </div>
         </section>
 
+        <section class="experience-section" id="resume" aria-labelledby="experience-title">
+            <div class="experience-shell">
+                <h2 id="experience-title" class="section-title">My <span>Work Experience</span></h2>
 
+                <div class="timeline-layout">
+                    <div class="timeline-column timeline-column--places">
+                        <div class="timeline-item is-first">
+                            <h3>Cognizant, Mumbai</h3>
+                            <p>Sep 2016- July 2020</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Sugee Pvt limited, Mumbai</h3>
+                            <p>Sep 2020- July 2023</p>
+                        </div>
+                        <div class="timeline-item is-last">
+                            <h3>Cinetstox, Mumbai</h3>
+                            <p>Sep 2023</p>
+                        </div>
+                    </div>
 
+                    <div class="timeline-rail" aria-hidden="true">
+                        <span class="timeline-node timeline-node--orange"></span>
+                        <span class="timeline-node timeline-node--dark"></span>
+                        <span class="timeline-node timeline-node--orange"></span>
+                    </div>
+
+                    <div class="timeline-column timeline-column--roles">
+                        <div class="timeline-role is-first">
+                            <h3>Experience Designer</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales</p>
+                        </div>
+                        <div class="timeline-role">
+                            <h3>UI/UX Designer</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales</p>
+                        </div>
+                        <div class="timeline-role is-last">
+                            <h3>Lead UX Designer</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hire-section" id="contact" aria-labelledby="hire-title">
+            <div class="hire-shell">
+                <div class="hire-portrait-wrap">
+                    <div class="hire-portrait-backdrop">
+                        <img src="../assets/1b5633d8c33f2ece91ab6f55e11cdcd6c4f9c261.png" alt="Jenny smiling and pointing">
+                    </div>
+                </div>
+
+                <div class="hire-content">
+                    <h2 id="hire-title" class="section-title section-title--alt">Why <span>Hire me?</span></h2>
+
+                    <p class="hire-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales
+                    </p>
+
+                    <div class="hire-metrics">
+                        <div class="metric-card">
+                            <strong>450+</strong>
+                            <span>Project Completed</span>
+                        </div>
+                        <div class="metric-card">
+                            <strong>450+</strong>
+                            <span>Project Completed</span>
+                        </div>
+                    </div>
+
+                    <button type="button" class="hire-cta">Hire me</button>
+                </div>
+            </div>
+        </section>
 
     </main>
 
