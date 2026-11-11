@@ -11,7 +11,7 @@
     --color-orb: #ffb172;
     --font-body: "Urbanist", sans-serif;
     --page-gutter: clamp(20px, 4.93vw, 71px);
-    --top-space: clamp(22px, 3.2vw, 40px);
+    --top-space: clamp(22px, 3vw, 40px);
     --nav-height: clamp(56px, 5.97vw, 86px);
 }
 
@@ -55,7 +55,7 @@ button {
     font: inherit;
 }
 
-main > section {
+main>section {
     min-height: 100svh;
 }
 
@@ -65,7 +65,7 @@ main > section {
     min-height: 100svh;
     padding: var(--top-space) var(--page-gutter) 0;
     overflow: hidden;
-    background: #f3f3f3;
+    background: #fff;
 }
 
 .hero-shell {
@@ -86,7 +86,7 @@ main > section {
     min-height: 56px;
     padding: min(10px, 0.695vw) clamp(18px, 1.4vw, 24px);
     border-radius: 999px;
-    background: #191d22;
+    background: var(--color-nav);
     box-shadow: inset 0 0 0 1px rgb(255 255 255 / 6%);
 }
 
@@ -171,7 +171,7 @@ main > section {
 .hello-wrap {
     position: absolute;
     z-index: 5;
-    top: 1.3vw;
+    top: 6.45%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -208,7 +208,7 @@ main > section {
 .hero-title {
     position: absolute;
     z-index: 2;
-    top: 4.35vw;
+    top: 13.5%;
     left: 50%;
     width: max-content;
     max-width: 90%;
@@ -238,8 +238,8 @@ main > section {
 .left-spark {
     position: absolute;
     z-index: 3;
-    top: 15.4vw;
-    left: 10.5%;
+    top: 32%;
+    left: 18%;
     width: clamp(43px, 5.15vw, 74px);
     height: auto;
     overflow: visible;
@@ -253,7 +253,7 @@ main > section {
 .testimonial {
     position: absolute;
     z-index: 6;
-    top: 16.9vw;
+    top: 44.1%;
     left: 0;
     width: min(23vw, 331px);
     max-width: 331px;
@@ -262,7 +262,7 @@ main > section {
 
 .quote-mark {
     display: block;
-    height: clamp(26px, 2.5vw, 36px);
+    height: clamp(36px, 3vw, 44px);
     font-family: Georgia, serif;
     font-size: clamp(44px, 4.17vw, 60px);
     font-weight: 700;
@@ -281,7 +281,7 @@ main > section {
 .experience {
     position: absolute;
     z-index: 6;
-    top: 19.1vw;
+    top: 44.9%;
     right: 0;
     display: flex;
     flex-direction: column;
@@ -294,7 +294,7 @@ main > section {
     align-items: center;
     justify-content: center;
     gap: clamp(3px, 0.42vw, 6px);
-    margin-bottom: clamp(12px, 1.1vw, 16px);
+    margin-bottom: clamp(14px, 1.6vw, 24px);
     color: var(--color-orange);
 }
 
@@ -325,7 +325,7 @@ main > section {
 .portrait-orb {
     position: absolute;
     z-index: 1;
-    top: 19vw;
+    top: 51.5%;
     left: 50%;
     width: min(57vw, 820px);
     aspect-ratio: 1;
@@ -337,7 +337,7 @@ main > section {
 .hero-portrait {
     position: absolute;
     z-index: 3;
-    top: clamp(100px, calc(15vw - 30px), 190px);
+    top: 24%;
     left: 50%;
     display: block;
     width: min(72vw, 1000px);
@@ -383,7 +383,7 @@ main > section {
 .hero-actions {
     position: absolute;
     z-index: 5;
-    bottom: clamp(18px, 2.3vw, 34px);
+    bottom: clamp(18px, 2.9vw, 48px);
     left: 50%;
     display: flex;
     align-items: center;
@@ -650,6 +650,10 @@ main > section {
         margin-top: 7px;
         font-size: 11px;
         line-height: 1.25;
+    }
+
+    .hero-testimonial-break {
+        display: none;
     }
 
     .experience {
@@ -1678,6 +1682,7 @@ main > section {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .portfolio-see-all,
     .portfolio-project img,
     .portfolio-project__arrow {
@@ -1693,7 +1698,7 @@ main > section {
     flex-direction: column;
     justify-content: center;
     min-height: 100svh;
-    padding: clamp(72px, 8.2vw, 104px) 0 clamp(90px, 12vw, 136px);
+    padding: clamp(64px, 6.2vw, 80px) 0 clamp(80px, 9vw, 112px);
     overflow: hidden;
     border-radius: 32px;
     color: #fff;
@@ -1707,7 +1712,7 @@ main > section {
 
 .testimonials-heading {
     position: relative;
-    width: min(660px, calc(100% - 40px));
+    width: min(680px, calc(100% - 40px));
     margin: 0 auto clamp(58px, 6.4vw, 78px);
     text-align: center;
 }
@@ -1733,28 +1738,38 @@ main > section {
     line-height: 1.45;
 }
 
-.testimonials-spark {
+.testimonials-decoration,
+.testimonials-rays {
     position: absolute;
-    color: #fff;
-    font-size: 24px;
-    line-height: 1;
+    display: block;
+    object-fit: contain;
 }
 
-.testimonials-spark--left {
-    left: -2px;
+.testimonials-decoration {
+    width: 24px;
+    height: 24px;
+}
+
+.testimonials-decoration--left {
+    left: 0;
     bottom: -18px;
-    transform: rotate(-18deg);
 }
 
-.testimonials-spark--right {
+.testimonials-decoration--right {
     right: -25px;
     top: 74px;
-    transform: rotate(20deg);
+}
+
+.testimonials-rays {
+    top: -12px;
+    right: 24%;
+    width: 32px;
+    height: 38px;
 }
 
 .testimonials-window {
-    --testimonial-card-width: min(54.5vw, 584px);
-    --testimonial-card-gap: 18px;
+    --testimonial-card-width: min(55vw, 706px);
+    --testimonial-card-gap: 20px;
     width: 100%;
     overflow: hidden;
 }
@@ -1772,13 +1787,13 @@ main > section {
 .testimonial-card {
     position: relative;
     flex: 0 0 var(--testimonial-card-width);
-    min-height: 196px;
-    padding: 15px 15px 16px;
+    min-height: 238px;
+    padding: 18px 20px 20px;
     overflow: hidden;
-    border: 1px solid rgb(255 255 255 / 22%);
+    border: 1px solid rgb(255 255 255 / 27%);
     border-radius: 20px;
     color: #fff;
-    background: linear-gradient(135deg, rgb(255 255 255 / 15%), rgb(255 255 255 / 8%));
+    background: linear-gradient(135deg, rgb(255 255 255 / 18%), rgb(255 255 255 / 10%));
     box-shadow: inset 0 1px 0 rgb(255 255 255 / 12%), 0 16px 36px rgb(0 0 0 / 18%);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -1802,14 +1817,14 @@ main > section {
     z-index: 1;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 11px;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 .testimonial-card__author img {
     display: block;
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
     flex: 0 0 auto;
     border-radius: 50%;
     object-fit: cover;
@@ -1819,14 +1834,14 @@ main > section {
 .testimonial-card__author h3 {
     margin: 0 0 2px;
     color: #fff;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .testimonial-card__author span {
     color: rgb(255 255 255 / 86%);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.1;
 }
 
@@ -1835,29 +1850,29 @@ main > section {
     z-index: 1;
     display: flex;
     align-items: center;
-    gap: 7px;
-    margin-bottom: 9px;
+    gap: 8px;
+    margin-bottom: 12px;
 }
 
 .testimonial-card__rating span {
     color: var(--color-orange);
-    font-size: 24px;
+    font-size: 27px;
     letter-spacing: 1px;
     line-height: 1;
 }
 
 .testimonial-card__rating strong {
     color: #fff;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 600;
 }
 
-.testimonial-card > p {
+.testimonial-card>p {
     position: relative;
     z-index: 1;
     margin: 0;
     color: rgb(255 255 255 / 96%);
-    font-size: clamp(14px, 1.3vw, 16px);
+    font-size: clamp(15px, 1.35vw, 18px);
     line-height: 1.4;
 }
 
@@ -1876,8 +1891,18 @@ main > section {
         font-size: clamp(30px, 8vw, 38px);
     }
 
-    .testimonials-spark--right {
+    .testimonials-decoration--left {
+        left: 4px;
+    }
+
+    .testimonials-decoration--right {
         right: 0;
+    }
+
+    .testimonials-rays {
+        right: 7%;
+        width: 28px;
+        height: 34px;
     }
 
     .testimonials-window {
@@ -1888,6 +1913,19 @@ main > section {
     .testimonial-card {
         min-height: 220px;
         padding: 16px;
+    }
+
+    .testimonial-card__author img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .testimonial-card__author h3 {
+        font-size: 17px;
+    }
+
+    .testimonial-card__author span {
+        font-size: 13px;
     }
 }
 
@@ -1906,19 +1944,19 @@ main > section {
 }
 
 .journal-invitation {
-    width: min(660px, calc(100% - 36px));
+    width: min(786px, calc(100% - 36px));
     margin: 0 auto;
-    padding: clamp(42px, 5vw, 64px) 0 clamp(38px, 4vw, 52px);
+    padding: clamp(64px, 6.8vw, 92px) 0 clamp(76px, 7vw, 96px);
     text-align: center;
 }
 
 .journal-invitation h2 {
     margin: 0 0 8px;
     color: #354156;
-    font-size: clamp(26px, 3.2vw, 36px);
+    font-size: clamp(36px, 4.45vw, 60px);
     font-weight: 750;
     letter-spacing: -0.035em;
-    line-height: 1.18;
+    line-height: 1.3;
 }
 
 .journal-invitation h2 span {
@@ -1928,10 +1966,10 @@ main > section {
 .journal-contact-form {
     display: flex;
     align-items: center;
-    width: min(410px, 100%);
-    height: 48px;
+    width: min(100%, 786px);
+    height: 81px;
     margin: 0 auto 12px;
-    padding: 4px;
+    padding: 8px 12px;
     border: 1px solid #e8e9ec;
     border-radius: 999px;
     box-shadow: 0 4px 14px rgb(23 36 56 / 7%);
@@ -1942,20 +1980,26 @@ main > section {
     flex: 1 1 auto;
     align-items: center;
     min-width: 0;
-    gap: 8px;
-    padding-left: 4px;
+    gap: 16px;
+    padding-left: 0;
 }
 
 .journal-email__icon {
     display: grid;
     flex: 0 0 auto;
     place-items: center;
-    width: 30px;
+    width: 60px;
     aspect-ratio: 1;
     border-radius: 50%;
     color: var(--color-orange);
     background: #fff0e6;
-    font-size: 15px;
+    font-size: 24px;
+}
+
+.journal-email__icon svg {
+    display: block;
+    width: 28px;
+    height: 28px;
 }
 
 .journal-email input {
@@ -1967,7 +2011,7 @@ main > section {
     color: #20232a;
     background: transparent;
     font: inherit;
-    font-size: 12px;
+    font-size: clamp(15px, 1.35vw, 18px);
 }
 
 .journal-email input::placeholder {
@@ -1976,12 +2020,12 @@ main > section {
 }
 
 .journal-contact-form button,
-.journal-posts__heading > a {
+.journal-posts__heading>a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
-    min-width: 90px;
+    min-width: 120px;
     height: 100%;
     padding: 0 20px;
     border: 0;
@@ -1989,7 +2033,7 @@ main > section {
     color: #fff;
     background: var(--color-orange);
     font: inherit;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
@@ -1997,7 +2041,7 @@ main > section {
 }
 
 .journal-contact-form button:hover,
-.journal-posts__heading > a:hover {
+.journal-posts__heading>a:hover {
     background: #ff9857;
 }
 
@@ -2008,7 +2052,7 @@ main > section {
     margin: 0;
     padding: 0;
     color: #17191e;
-    font-size: clamp(9px, 0.85vw, 11px);
+    font-size: clamp(11px, 1.05vw, 14px);
     list-style: none;
 }
 
@@ -2017,41 +2061,66 @@ main > section {
 }
 
 .journal-highlights li span {
+    display: inline-flex;
+    align-items: center;
     margin-right: 3px;
     font-weight: 800;
+    vertical-align: -2px;
+}
+
+.journal-highlights li svg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
 }
 
 .journal-marquee {
     position: relative;
-    width: 106%;
-    margin: 0 -3% clamp(52px, 6vw, 72px);
-    padding: 7px 0;
+    width: 100%;
+    max-width: 1440px;
+    height: 147px;
+    margin: 0 auto clamp(52px, 6vw, 72px);
     overflow: hidden;
-    transform: rotate(-2.6deg);
-    background: #ff5b16;
+    border-radius: 28px;
+    background: #ff6a1a;
+}
+
+.journal-marquee__inner {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    width: 110%;
+    transform: translateY(calc(-50% + 8px)) rotate(-1.9deg);
 }
 
 .journal-marquee__track {
     display: flex;
-    width: max-content;
     align-items: center;
+    gap: 16px;
+    width: max-content;
+    min-height: 60px;
+    padding: 11px 0 11px 48px;
+    overflow: hidden;
     background: #fff;
-    color: #17191e;
-    font-size: clamp(20px, 2.45vw, 30px);
-    line-height: 1.2;
+    color: #0a0a0a;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
     white-space: nowrap;
-    transform: translateX(-50%);
 }
 
 .journal-marquee__track span {
     display: block;
-    padding-inline: 8px;
+    flex: 0 0 auto;
 }
 
-.journal-marquee__track b {
-    padding-inline: 8px;
-    color: #ff5b16;
-    font-weight: 700;
+.journal-marquee__track img {
+    display: block;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
 }
 
 .journal-posts {
@@ -2077,7 +2146,7 @@ main > section {
     line-height: 1.15;
 }
 
-.journal-posts__heading > a {
+.journal-posts__heading>a {
     min-width: 86px;
     height: 42px;
     font-size: 12px;
@@ -2196,6 +2265,40 @@ main > section {
         padding-block: 36px 32px;
     }
 
+    .journal-invitation h2 {
+        font-size: clamp(30px, 8vw, 38px);
+        line-height: 1.18;
+    }
+
+    .journal-contact-form {
+        height: 58px;
+        padding: 5px;
+    }
+
+    .journal-email {
+        gap: 8px;
+        padding-left: 2px;
+    }
+
+    .journal-email__icon {
+        width: 40px;
+        font-size: 17px;
+    }
+
+    .journal-email__icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .journal-email input {
+        font-size: 13px;
+    }
+
+    .journal-contact-form button {
+        min-width: 82px;
+        font-size: 14px;
+    }
+
     .journal-highlights {
         flex-wrap: wrap;
         justify-content: center;
@@ -2204,6 +2307,19 @@ main > section {
 
     .journal-marquee {
         margin-bottom: 44px;
+    }
+
+    .journal-marquee__track {
+        gap: 12px;
+        min-height: 52px;
+        padding-left: 24px;
+        font-size: clamp(28px, 7vw, 40px);
+    }
+
+    .journal-marquee__track img {
+        flex-basis: 28px;
+        width: 28px;
+        height: 28px;
     }
 
     .journal-posts {
@@ -2229,8 +2345,9 @@ main > section {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .journal-contact-form button,
-    .journal-posts__heading > a,
+    .journal-posts__heading>a,
     .journal-post__arrow {
         transition: none;
     }

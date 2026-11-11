@@ -70,7 +70,7 @@
 
                     <h1 class="hero-title" aria-label="I'm Jenny, Product Designer">
                         <span class="hero-title__line">I'm <span class="accent-text">Jenny</span>,</span>
-                        <span class="hero-title__line hero-title__line--highlight">Product <span class="accent-text">Designer</span></span>
+                        <span class="hero-title__line hero-title__line--highlight">Product Designer</span>
                     </h1>
 
                     <svg class="left-spark" viewBox="0 0 74 92" aria-hidden="true">
@@ -79,7 +79,7 @@
 
                     <div class="testimonial">
                         <span class="quote-mark" aria-hidden="true">“</span>
-                        <p>Jenny’s Exceptional product design ensure your website’s success. Highly Recommended</p>
+                        <p>Jenny’s Exceptional product design<br class="hero-testimonial-break">ensure our website’s success.<br class="hero-testimonial-break">Highly Recommended</p>
                     </div>
 
                     <div class="experience" aria-label="Five star rating, ten years experience">
@@ -371,14 +371,17 @@
 
         <section class="testimonials-section" aria-labelledby="testimonials-title">
             <header class="testimonials-heading">
-                <span class="testimonials-spark testimonials-spark--left" aria-hidden="true">✦</span>
+                <img class="testimonials-decoration testimonials-decoration--left"
+                    src="../assets/Vector.png" alt="" aria-hidden="true">
+                <img class="testimonials-rays" src="../assets/Vector 1.png" alt="" aria-hidden="true">
                 <h2 id="testimonials-title">Testimonials That<br>Speak to <span>My Results</span></h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum
                     ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed lobortis orci elementum egestas lobortis.
                 </p>
-                <span class="testimonials-spark testimonials-spark--right" aria-hidden="true">✦</span>
+                <img class="testimonials-decoration testimonials-decoration--right"
+                    src="../assets/Vector.png" alt="" aria-hidden="true">
             </header>
 
             <div class="testimonials-window">
@@ -439,23 +442,45 @@
                 <form class="journal-contact-form" action="mailto:hello@jcrea.design" method="get"
                     enctype="text/plain">
                     <label class="journal-email">
-                        <span class="journal-email__icon" aria-hidden="true">✉</span>
+                    <span class="journal-email__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <rect x="1.5" y="3" width="21" height="18" rx="5" fill="currentColor" />
+                            <path d="m5 8 7 5 7-5" fill="none" stroke="#fff" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+                    </span>
                         <span class="visually-hidden">Your email address</span>
                         <input type="email" name="email" placeholder="Enter Email Address" required>
                     </label>
                     <button type="submit">Send</button>
                 </form>
                 <ul class="journal-highlights" aria-label="Professional highlights">
-                    <li><span aria-hidden="true">✦</span> 4.9/5 Average Ratings</li>
-                    <li><span aria-hidden="true">♙</span> 25+ Winning Awards</li>
-                    <li><span aria-hidden="true">◆</span> Certified Product Designer</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false">
+                        <path d="m12 2 3 6.1 6.7 1-4.9 4.7 1.2 6.7-6-3.2-6 3.2 1.2-6.7-4.9-4.7 6.7-1L12 2Z" />
+                    </svg></span> 4.9/5 Average Ratings</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M8 3h8l1.2 3.2 2.9 1.4v7.8L12 22l-8.1-6.6V7.6l2.9-1.4L8 3Zm4 4.1-1.3 2.6-2.9.4 2.1 2-.5 2.9 2.6-1.4 2.6 1.4-.5-2.9 2.1-2-2.9-.4L12 7.1Z" />
+                    </svg></span> 25+ Winning Awards</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M12 2 21 5v6.2c0 5.2-3.7 8.9-9 10.8-5.3-1.9-9-5.6-9-10.8V5l9-3Zm-1.1 13.3 6-6-1.7-1.7-4.3 4.3-2-2-1.7 1.7 3.7 3.7Z" />
+                    </svg></span> Certified Product Designer</li>
                 </ul>
             </div>
 
-            <div class="journal-marquee" aria-label="UX Design, App Design, Dashboard, Wireframe, User Research">
-                <div class="journal-marquee__track">
-                    <span>UX Design <b aria-hidden="true">✦</b> App Design <b aria-hidden="true">✦</b> Dashboard <b aria-hidden="true">✦</b> Wireframe <b aria-hidden="true">✦</b> User Research <b aria-hidden="true">✦</b></span>
-                    <span aria-hidden="true">UX Design <b>✦</b> App Design <b>✦</b> Dashboard <b>✦</b> Wireframe <b>✦</b> User Research <b>✦</b></span>
+            <div class="journal-marquee" aria-hidden="true">
+                <div class="journal-marquee__inner">
+                    <div class="journal-marquee__track">
+                        <span>UX Design</span>
+                        <img src="../assets/star.png" alt="">
+                        <span>App Design</span>
+                        <img src="../assets/star.png" alt="">
+                        <span>Dashboard</span>
+                        <img src="../assets/star.png" alt="">
+                        <span>Wireframe</span>
+                        <img src="../assets/star.png" alt="">
+                        <span>User Research</span>
+                        <img src="../assets/star.png" alt="">
+                    </div>
                 </div>
             </div>
 
